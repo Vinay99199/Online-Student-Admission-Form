@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="admission-form-section">
+        <div class="container">
+            <h1>College Admission Form</h1>
+            <p class="form-subtext">Please fill in the form below to apply for admission.</p>
+            
+            <form action="#" method="POST" class="admission-form">
+                
+                <!-- Basic Information -->
+                <div class="form-section">
+                    <h2>Basic Information</h2>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">-- Select --</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section">
+                    <h2>Contact Information</h2>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Education Information -->
+                <div class="form-section">
+                    <h2>Educational Details</h2>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="qualification">Highest Qualification</label>
+                            <input type="text" id="qualification" name="qualification" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="percentage">Percentage / CGPA</label>
+                            <input type="text" id="percentage" name="percentage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passingyear">Passing Year</label>
+                            <input type="text" id="passingyear" name="passingyear" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-section">
+                    <h2>Course Selection</h2>
+                    <div class="form-group">
+                        <label for="course">Select Course</label>
+                        <select id="course" name="course" required>
+                            <option value="">-- Select Course --</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BSc IT">B.Sc IT</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MCA">MCA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="form-section payment-section">
+                    <h2>UPI Payment</h2>
+                    <div class="payment-container">
+                        <!-- Left -->
+                        <div class="payment-left">
+                            <div class="form-group">
+                                <label for="amount">Admission Fee</label>
+                                <input type="text" id="amount" name="amount" value="₹5000" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="upi-id">Pay to UPI ID</label>
+                                <input type="text" id="upi-id" value="collegeadmissions@upi" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="transaction">UPI Transaction Reference ID</label>
+                                <input type="text" id="transaction" name="transaction" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="upload">Upload Payment Screenshot</label>
+                                <input type="file" id="upload" name="payment_screenshot" accept="image/*" required>
+                            </div>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="payment-right">
+                            <p>Scan & Pay using any UPI App</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/QR_code_icon.svg/768px-QR_code_icon.svg.png" alt="QR Code" class="qr-code">
+                            <button type="button" class="pay-now-btn">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-btn">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
